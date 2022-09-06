@@ -23,9 +23,9 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
 	{
 		/* TODO: UPDATE CLUSTER PER NETWORK SETTINGS, ADD LOCALHOST + CUSTOMNET | ADAPTER REWORK */
 	}
-	const network = WalletAdapterNetwork.Devnet;
+	const network = WalletAdapterNetwork.Mainnet;
 	const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-	const mainnetGenesysgo = "https://ssc-dao.genesysgo.net";
+	const mainnetGenesysgo = "https://thrumming-red-night.solana-mainnet.quiknode.pro/d4ee81565674a64f2997aa61833d96730bf578e8/";
 	//@TODO add genesysgo rpc endpoint for mainnet https://ssc-dao.genesysgo.net/
 
 	const wallets = useMemo(
